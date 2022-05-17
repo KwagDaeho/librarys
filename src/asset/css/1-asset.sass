@@ -1,0 +1,558 @@
+
+// Responsive : sss, ss, s, m, l, ll, lll 
+
+//----------
+// Color Setting
+//----------
+$default : #222
+$bk: #000
+$point1 : #B61B2D
+$point2 : #1568a1
+$point3 : #43a7ed
+$point4 : #ac01ea
+$point5 : #ffaced
+$gray1 : #2c2c2c
+$gray2 : #555
+$gray3 : #7d7d7d
+$gray4 : #999
+$gray5 : #aaa
+$gray6 : #ccc
+$gray7 : #eee
+$gray8 : #f6f6f6
+
+// Font-Face & font-family Setting
+$ff1 : "Raleway", "Noto Sans KR", san-serif
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@font-face 
+  font-family: $ff1
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+.ff-1
+  font-family: $ff1
+.ff-2
+  font-family: $ff1
+body
+  font-family: $ff1
+
+//----------
+// Classes
+//----------
+.wrap 
+  width: 70%
+  max-width: 1500px
+  margin: auto
+.blind 
+  position: absolute
+  width: 0
+  height: 0
+  overflow: hidden
+  left: -9999px
+  top: -9999px
+.clearfix::after 
+  content: ""
+  display: block
+  clear: both
+.tp-on-mo
+  display: none
+.tp-on-pc
+  display: inherit
+@media screen and (max-width: 767px)
+  .tp-on-mo
+    display: block
+  .wrap 
+    width: 94%
+@media screen and (max-width: 1023px)
+  .tp-on-pc
+    display: none
+
+//----------
+// COLOR
+//----------
+
+// Font-color
+.text-white
+  color: #fff
+.text-bk
+  color: #000
+.text-point1
+  color: $point1
+.text-point2
+  color: $point2
+.text-point3
+  color: $point3
+.text-point4
+  color: $point4
+.text-point5
+  color: $point5
+.text-gray1
+  color: $gray1
+.text-gray2
+  color: $gray2
+.text-gray3
+  color: $gray3
+.text-gray4
+  color: $gray4
+.text-gray5
+  color: $gray5
+.text-gray6
+  color: $gray6
+.text-gray7
+  color: $gray7
+.text-gray8
+  color: $gray8
+
+// Background-color
+.bgc-white
+  background-color: #fff
+.bgc-point1
+  background-color: $point1
+.bgc-point2
+  background-color: $point2
+.bgc-point3
+  background-color: $point3
+.bgc-point4
+  background-color: $point4
+.bgc-point4
+  background-color: $point5
+.bgc-gray1
+  background-color: $gray1
+.bgc-gray2
+  background-color: $gray2
+.bgc-gray3
+  background-color: $gray3
+.bgc-gray4
+  background-color: $gray4
+.bgc-gray5
+  background-color: $gray5
+.bgc-gray6
+  background-color: $gray6
+.bgc-gray7
+  background-color: $gray7
+.bgc-gray8
+  background-color: $gray8
+
+// Border-color
+.bdc-white
+  border-color: #fff
+.bdc-point1
+  border-color: $point1
+.bdc-point2
+  border-color: $point2
+.bdc-point3
+  border-color: $point3
+.bdc-point4
+  border-color: $point4
+.bdc-point5
+  border-color: $point5
+.bdc-gray1
+  border-color: $gray1
+.bdc-gray2
+  border-color: $gray2
+.bdc-gray3
+  border-color: $gray3
+.bdc-gray4
+  border-color: $gray4
+.bdc-gray5
+  border-color: $gray5
+.bdc-gray6
+  border-color: $gray6
+.bdc-gray7
+  border-color: $gray7
+.bdc-gray8
+  border-color: $gray8
+
+.bdtc-white
+  border-top-color: #fff
+.bdtc-point1
+  border-top-color: $point1
+.bdtc-point2
+  border-top-color: $point2
+.bdtc-point3
+  border-top-color: $point3
+.bdtc-point4
+  border-top-color: $point4
+.bdtc-point5
+  border-top-color: $point5
+.bdtc-gray1
+  border-top-color: $gray1
+.bdtc-gray2
+  border-top-color: $gray2
+.bdtc-gray3
+  border-top-color: $gray3
+.bdtc-gray4
+  border-top-color: $gray4
+.bdtc-gray5
+  border-top-color: $gray5
+.bdtc-gray6
+  border-top-color: $gray6
+.bdtc-gray7
+  border-top-color: $gray7
+.bdtc-gray8
+  border-top-color: $gray8
+
+.bdbc-white
+  border-bottom-color: #fff
+.bdbc-point1
+  border-bottom-color: $point1
+.bdbc-point2
+  border-bottom-color: $point2
+.bdbc-point3
+  border-bottom-color: $point3
+.bdbc-point4
+  border-bottom-color: $point4
+.bdbc-point5
+  border-bottom-color: $point5
+.bdbc-gray1
+  border-bottom-color: $gray1
+.bdbc-gray2
+  border-bottom-color: $gray2
+.bdbc-gray3
+  border-bottom-color: $gray3
+.bdbc-gray4
+  border-bottom-color: $gray4
+.bdbc-gray5
+  border-bottom-color: $gray5
+.bdbc-gray6
+  border-bottom-color: $gray6
+.bdbc-gray7
+  border-bottom-color: $gray7
+.bdbc-gray8
+  border-bottom-color: $gray8
+
+.bdlc-white
+  border-left-color: #fff
+.bdlc-point1
+  border-left-color: $point1
+.bdlc-point2
+  border-left-color: $point2
+.bdlc-point3
+  border-left-color: $point3
+.bdlc-point4
+  border-left-color: $point4
+.bdlc-point5
+  border-left-color: $point5
+.bdlc-gray1
+  border-left-color: $gray1
+.bdlc-gray2
+  border-left-color: $gray2
+.bdlc-gray3
+  border-left-color: $gray3
+.bdlc-gray4
+  border-left-color: $gray4
+.bdlc-gray5
+  border-left-color: $gray5
+.bdlc-gray6
+  border-left-color: $gray6
+.bdlc-gray7
+  border-left-color: $gray7
+.bdlc-gray8
+  border-left-color: $gray8
+
+.bdrc-white
+  border-right-color: #fff
+.bdrc-point1
+  border-right-color: $point1
+.bdrc-point2
+  border-right-color: $point2
+.bdrc-point3
+  border-right-color: $point3
+.bdrc-point4
+  border-right-color: $point4
+.bdrc-point5
+  border-right-color: $point5
+.bdrc-gray1
+  border-right-color: $gray1
+.bdrc-gray2
+  border-right-color: $gray2
+.bdrc-gray3
+  border-right-color: $gray3
+.bdrc-gray4
+  border-right-color: $gray4
+.bdrc-gray5
+  border-right-color: $gray5
+.bdrc-gray6
+  border-right-color: $gray6
+.bdrc-gray7
+  border-right-color: $gray7
+.bdrc-gray8
+  border-right-color: $gray8
+
+
+//----------
+// LAYOUT
+//----------
+
+// Width
+.w-30per
+  width: 30%
+.w-40per
+  width: 40%
+.w-80per
+  width: 80%
+.w-100per
+  width: 100%
+
+.w-sss
+  width: 40%
+.w-ss
+  width: 60%
+.w-s
+  width: 80%
+.w-m
+  width: 100%
+.w-l
+  width: 120%
+.w-ll
+  width: 150%
+.w-lll
+  width: 200%
+
+// Height
+.h-100per
+  height: 100%
+
+// Display
+.d-flex
+  display: flex
+.d-b
+  display: block
+.d-ib
+  display: inline-block
+.d-in
+  display: inline
+
+// Margin
+.m-20-0
+  margin: 20px 0
+.m-30-0
+  margin: 30px 0
+
+.mt-a
+  margin-top: auto
+.mt-10
+  margin-top: 10px
+.mt-20
+  margin-top: 20px
+.mt-50
+  margin-top: 50px
+.mt-100
+  margin-top: 100px
+.mt-200
+  margin-top: 200px
+
+.mb-a 
+  margin-bottom: auto
+.mb-10
+  margin-bottom: 10px
+.mb-30
+  margin-bottom: 30px
+.mb-50
+  margin-bottom: 50px
+
+.ml-a
+  margin-left: auto
+.ml-20per
+  margin-left: 20%
+
+.mr-a
+  margin-right: auto
+.mr-5
+  margin-right: 5px
+
+// Padding
+.pd-5-0
+  padding: 5px 0
+.pd-20-0
+  padding: 20px 0
+.pd-50-0
+  padding: 50px 0
+.pd-0-5
+  padding: 0 5px
+.pd-0-10
+  padding: 0 10px
+.pd-0-20
+  padding: 0 20px
+
+.pt-50
+  padding-top: 50px
+.pt-100
+  padding-top: 100px
+
+.pb-0
+  padding-bottom: 0
+
+.pl-0
+  padding-left: 0
+
+.pr-0
+  padding-right: 0
+.pr-20
+  padding-right: 20px
+
+// Border
+.bd-0
+  border: 0 !important
+.bd-1
+  border-width: 1px
+  border-style: solid
+.bdt-1
+  border-top-width: 1px
+  border-top-style: solid
+.bdb-1
+  border-bottom-width: 1px
+  border-bottom-style: solid
+.bdl-1
+  border-left-width: 1px
+  border-left-style: solid
+.bdr-1
+  border-right-width: 1px
+  border-right-style: solid
+
+
+//----------
+// FONT
+//----------
+
+// Test-align
+.ta-l
+  text-align: left
+.ta-r
+  text-align: right
+.ta-c
+  text-align: center
+
+// Font-size
+.fz-sss
+  font-size: 0.6em
+.fz-ss
+  font-size: 0.8em
+.fz-s
+  font-size: 0.9em
+.fz-m
+  font-size: 1em
+.fz-l
+  font-size: 1.2em
+.fz-ll
+  font-size: 1.5em
+.fz-lll
+  font-size: 2em
+.fz-48
+  font-size: 48px
+.fz-60
+  font-size: 60px
+.fz-80
+  font-size: 80px
+.fz-100
+  font-size: 100px
+// Font-weight
+.fw-200
+  font-weight: 200
+.fw-300
+  font-weight: 300
+.fw-400
+  font-weight: 400
+.fw-500
+  font-weight: 500
+.fw-600
+  font-weight: 600
+.fw-700
+  font-weight: 700
+.fw-800
+  font-weight: 800
+.fw-900
+  font-weight: 900
+
+// Text-indent
+.ti-5
+  text-indent: 5px
+.ti-10
+  text-indent: 10px
+.ti-20
+  text-indent: 20px
+.ti--5
+  text-indent: -5px
+.ti--10
+  text-indent: -10px
+.ti--20
+  text-indent: -20px
+
+// Line-height (em)
+.lh-1em
+  line-height: 1em
+.lh-12em
+  line-height: 1.2em
+.lh-15em
+  line-height: 1.5em
+.lh-2em
+  line-height: 2em
+
+
+//----------
+// POSITION
+//----------
+
+// Position
+.pos-abs
+  position: absolute
+.pos-rel
+  position: relative
+.pos-sta
+  position: static
+.pos-fix
+  position: fixed
+.pos-sti
+  position: sticky
+
+// Position-location
+.t-0
+  top: 0
+
+.b-0
+  bottom: 0
+.b--50
+  bottom: -50px
+.b--100
+  bottom: -100px
+
+.l-0
+  left: 0
+
+.r-0
+  right: 0
+
+// Transition
+.time-03
+  transition: 0.3s
+.time-035
+  transition: 0.35s
+.time-05
+  transition: 0.5s
+.time-1
+  transition: 1s
+
+//----------
+// Flex-options
+//----------
+
+.f-wrap
+  flex-wrap: wrap
+.f-wrap-r
+  flex-wrap: wrap-reverse
+.jus-start
+  justify-content: flex-start
+.jus-center
+  justify-content: center
+.jus-end
+  justify-content: flex-end
+.jus-bet
+  justify-content: space-between
+.jus-around
+  justify-content: space-around
+.ali-c
+  align-items: center
+.ali-start
+  align-items: flex-start
+.ali-end
+  align-items: flex-end

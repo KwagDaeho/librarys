@@ -1,0 +1,289 @@
+@charset "UTF-8";
+.sa {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+/* 아래에서 위로 페이드 인 */
+.sa-up {
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+}
+
+/* 위에서 아래로 페이드 인 */
+.sa-down {
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
+}
+
+/* 왼쪽에서 오른쪽으로 페이드 인 */
+.sa-right {
+  -webkit-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+}
+
+/* 오른쪽에서 왼쪽으로 페이드 인 */
+.sa-left {
+  -webkit-transform: translate(100px, 0);
+          transform: translate(100px, 0);
+}
+
+/* 왼쪽으로 회전하면서 페이드 인 */
+.sa-rotateL {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* 오른쪽으로 회전하면서 페이드 인 */
+.sa-rotateR {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+/* 작아진 상태에서 커지면서 페이드 인 */
+.sa-scaleUp {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+/* 커진 상태에서 작아지면서 페이드 인 */
+.sa-scaleDown {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.toggle_bgc {
+  -webkit-animation: toggle_bgc 2s infinite;
+          animation: toggle_bgc 2s infinite;
+}
+
+.toggle_bgc_before::before {
+  -webkit-animation: toggle_bgc 2s infinite;
+          animation: toggle_bgc 2s infinite;
+}
+
+.toggle_bgc_after::after {
+  -webkit-animation: toggle_bgc 2s infinite;
+          animation: toggle_bgc 2s infinite;
+}
+
+.hover_toggle_bgc:hover {
+  -webkit-animation: toggle_bgc 2s infinite;
+          animation: toggle_bgc 2s infinite;
+}
+
+.hover_toggle_bgc_before:hover::before {
+  -webkit-animation: toggle_bgc 2s infinite;
+          animation: toggle_bgc 2s infinite;
+}
+
+.hover_toggle_bgc_after:hover::after {
+  -webkit-animation: toggle_bgc 2s infinite;
+          animation: toggle_bgc 2s infinite;
+}
+
+@-webkit-keyframes toggle_bgc {
+  0% {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@keyframes toggle_bgc {
+  0% {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.slider-text {
+  overflow: hidden;
+}
+
+.slider-text ol {
+  height: 300%;
+}
+
+.slider-text1 ol {
+  -webkit-animation: slide-text1 9s infinite;
+          animation: slide-text1 9s infinite;
+}
+
+.slider-text2 ol {
+  -webkit-animation: slide-text2 9s infinite;
+          animation: slide-text2 9s infinite;
+}
+
+.slider-text3 ol {
+  height: 200%;
+  -webkit-animation: slide-text3 6s infinite;
+          animation: slide-text3 6s infinite;
+}
+
+@-webkit-keyframes slide-text1 {
+  0% {
+    margin-top: 0;
+  }
+  29% {
+    margin-top: 0;
+  }
+  33% {
+    margin-top: -96px;
+  }
+  62% {
+    margin-top: -96px;
+  }
+  66% {
+    margin-top: -192px;
+  }
+  95% {
+    margin-top: -192px;
+  }
+  99% {
+    margin-top: -288px;
+  }
+  100% {
+    margin-top: -288px;
+  }
+}
+
+@keyframes slide-text1 {
+  0% {
+    margin-top: 0;
+  }
+  29% {
+    margin-top: 0;
+  }
+  33% {
+    margin-top: -96px;
+  }
+  62% {
+    margin-top: -96px;
+  }
+  66% {
+    margin-top: -192px;
+  }
+  95% {
+    margin-top: -192px;
+  }
+  99% {
+    margin-top: -288px;
+  }
+  100% {
+    margin-top: -288px;
+  }
+}
+
+@-webkit-keyframes slide-text2 {
+  0% {
+    margin-top: 0;
+  }
+  29% {
+    margin-top: 0;
+  }
+  33% {
+    margin-top: -50px;
+  }
+  62% {
+    margin-top: -50px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  95% {
+    margin-top: -100px;
+  }
+  99% {
+    margin-top: -150px;
+  }
+  100% {
+    margin-top: -150px;
+  }
+}
+
+@keyframes slide-text2 {
+  0% {
+    margin-top: 0;
+  }
+  29% {
+    margin-top: 0;
+  }
+  33% {
+    margin-top: -50px;
+  }
+  62% {
+    margin-top: -50px;
+  }
+  66% {
+    margin-top: -100px;
+  }
+  95% {
+    margin-top: -100px;
+  }
+  99% {
+    margin-top: -150px;
+  }
+  100% {
+    margin-top: -150px;
+  }
+}
+
+@-webkit-keyframes slide-text3 {
+  0% {
+    bottom: 0;
+  }
+  43.5% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 150px;
+  }
+  93.5% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 300px;
+  }
+}
+
+@keyframes slide-text3 {
+  0% {
+    bottom: 0;
+  }
+  43.5% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 150px;
+  }
+  93.5% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 300px;
+  }
+}
+/*# sourceMappingURL=3-ani.css.map */

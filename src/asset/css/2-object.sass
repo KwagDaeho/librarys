@@ -1,0 +1,71 @@
+
+// Responsive : sss, ss, s, m, l, ll, lll 
+  
+//----------
+// Color Setting
+//----------
+$default : #222
+$point1 : #B61B2D
+$point2 : #1568a1
+$point3 : #43a7ed
+$point4 : #ac01ea
+$point5 : #ffaced
+$gray1 : #2c2c2c
+$gray2 : #555
+$gray3 : #7d7d7d
+$gray4 : #999
+$gray5 : #aaa
+$gray6 : #ccc
+$gray7 : #eee
+$gray8 : #f6f6f6
+  
+//----------
+// Banner
+//----------
+.banner-main-wrap
+  padding-bottom: 0
+.banner-main
+  height: 100%
+  padding: 50px 0
+
+
+//----------
+// Box
+//----------
+.box-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+$dlWidth: 70px
+$dl2Width: 50%
+dl.box-dl
+  display: flex
+  flex-wrap: wrap
+  padding: 10px 20px
+  >*
+    border-bottom: 1px solid #000
+    padding: 5px 10px
+    margin-bottom: 10px
+  dt
+    width: $dlWidth
+  dd
+    width: calc( 100% - #{$dlWidth} )
+    padding-left: 0
+    font-weight: 600
+    &::before
+      content: ':'
+      display: inline-block
+      margin-right: 10px
+
+dl.box-dl2
+  dt
+    width: $dl2Width
+  dd
+    width: calc( 100% - #{$dl2Width} )
+
+
+
+@media screen and (max-width: 767px)
+  #Sec01.banner-main-wrap
+    height: 300px

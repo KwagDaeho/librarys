@@ -1,0 +1,241 @@
+
+//----------
+// Color Setting
+//----------
+$default : #222
+$bk : #000
+$wh : #222
+$point1 : #B61B2D
+$point2 : #1568a1
+$point3 : #43a7ed
+$point4 : #ac01ea
+$point5 : #ffaced
+$gray1 : #2c2c2c
+$gray2 : #555
+$gray3 : #7d7d7d
+$gray4 : #999
+$gray5 : #aaa
+$gray6 : #ccc
+$gray7 : #eee
+$gray8 : #f6f6f6
+  
+.hover_turn
+  perspective: 2000
+  >div
+    width: 100%
+    height: 100%
+    position: relative
+    display: block
+    transform-style: preserve-3d
+    transition: 0.5s
+    >div
+      position: absolute
+      left: 0
+      top: 0
+      display: flex
+      flex-direction: column
+      justify-content: center
+      width: 100%
+      height: 100%
+      backface-visibility: hidden
+    &::before
+      z-index: -1
+      content: ''
+      display: block
+      width: 100%
+      padding-top: 100%
+    .hover_turn_hover
+      background-color: rgba(0,0,0,0.5)
+      color: #fff
+      transform: rotateY(180deg)
+  &:hover
+    >div
+      transform: rotateY(180deg)
+      .hover_turn_hover
+        h2
+          text-decoration: underline
+.hover-bd
+  transition: 0.5s
+  box-sizing: content-box
+  border: 5px solid #fff
+.hover-bd:hover 
+  border-color: #000
+.hover-bd * 
+  transition: 0.5s
+.hover-inverse 
+  transition: 0.5s
+.hover-inverse:hover 
+  filter: invert(1)
+.hover-gray 
+  transition: 0.5s
+.hover-gray:hover 
+  filter: grayscale(1.0)
+.hover-shadow 
+  transition: 0.5s
+.hover-shadow:hover 
+  filter: drop-shadow(5px 5px 3px #000)
+.hover-bd-move 
+  position: relative
+  border: 0
+.hover-bd-move span
+  position: absolute
+  background: #000
+  transition: all 0.5s
+.hover-bd-move span:nth-child(1)
+  left: 0
+  top: 0
+  width: 0
+  height: 5px
+.hover-bd-move span:nth-child(2)
+  right: 0
+  top: 0
+  width: 5px
+  height: 0
+.hover-bd-move span:nth-child(3)
+  right: 0
+  bottom: 0
+  width: 0
+  height: 5px
+.hover-bd-move span:nth-child(4)
+  left: 0
+  bottom: 0
+  width: 5px
+  height: 0
+.hover-bd-move:hover span:nth-child(1)
+  width: 100%
+.hover-bd-move:hover span:nth-child(2)
+  height: 100%
+.hover-bd-move:hover span:nth-child(3)
+  width: 100%
+.hover-bd-move:hover span:nth-child(4)
+  height: 100%
+
+.hover-bd-move-order 
+  position: relative
+  border: 0
+.hover-bd-move-order span
+  position: absolute
+  background: #000
+  transition: all 0.3s
+.hover-bd-move-order span:nth-child(1)
+  left: 0
+  top: 0
+  width: 0
+  height: 5px
+.hover-bd-move-order span:nth-child(2)
+  right: 0
+  top: 0
+  width: 5px
+  height: 0
+  transition-delay: 0.15s
+.hover-bd-move-order span:nth-child(3)
+  right: 0
+  bottom: 0
+  width: 0
+  height: 5px
+  transition-delay: 0.45s
+.hover-bd-move-order span:nth-child(4)
+  left: 0
+  bottom: 0
+  width: 5px
+  height: 0
+  transition-delay: 0.75s
+.hover-bd-move-order:hover span:nth-child(1)
+  width: 100%
+.hover-bd-move-order:hover span:nth-child(2)
+  height: 100%
+.hover-bd-move-order:hover span:nth-child(3)
+  width: 100%
+.hover-bd-move-order:hover span:nth-child(4)
+  height: 100%
+
+.hover-bdb-move
+  border: 0
+  position: relative
+  span
+    position: absolute
+    left: 0
+    bottom: 15px
+    width: 0
+    height: 2px
+    background: $point1
+    transition: all 0.5s
+  &:hover
+    span
+      width: 100%
+.hover-bdb-move-over
+  border: 0
+  position: relative
+  overflow: hidden
+  span
+    position: absolute
+    left: -90%
+    bottom: 0
+    width: 90%
+    height: 3px
+    background: #000
+    transition: all 0.8s
+  &:hover
+    span
+      left: 100%
+.hover-square-zoom-1
+  position: relative
+  background-size: 100%
+  overflow: hidden
+  transition: 0.4s
+  >div
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    transition: 0.4s
+  &::before
+    content: ''
+    display: block
+    padding-top: 100%
+  &:hover
+    background-size: 120%
+    >div
+      width: 90%
+      height: 90%
+      margin: 5%
+      background-color: rgba(0,0,0,0.6)
+      color: #fff
+
+.hover-square-zoom-2
+  position: relative
+  background-size: 100%
+  overflow: hidden
+  transition: 0.6s
+  >div
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    transition: 0.6s
+    >*
+      transform: scaleY(0)
+      transition: 0.3s linear
+  &::before
+    content: ''
+    display: block
+    padding-top: 100%
+  &:hover
+    background-size: 120%
+    >div
+      width: 90%
+      height: 90%
+      margin: 5%
+      background-color: rgba(0,0,0,0.6)
+      >*
+        transform: scaleY(1)
+        color: #fff
+

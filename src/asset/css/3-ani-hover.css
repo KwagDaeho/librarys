@@ -1,0 +1,368 @@
+.hover_turn {
+  -webkit-perspective: 2000;
+          perspective: 2000;
+}
+
+.hover_turn > div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover_turn > div > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.hover_turn > div::before {
+  z-index: -1;
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.hover_turn > div .hover_turn_hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.hover_turn:hover > div {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.hover_turn:hover > div .hover_turn_hover h2 {
+  text-decoration: underline;
+}
+
+.hover-bd {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 5px solid #fff;
+}
+
+.hover-bd:hover {
+  border-color: #000;
+}
+
+.hover-bd * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover-inverse {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover-inverse:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.hover-gray {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover-gray:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.hover-shadow {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hover-shadow:hover {
+  -webkit-filter: drop-shadow(5px 5px 3px #000);
+          filter: drop-shadow(5px 5px 3px #000);
+}
+
+.hover-bd-move {
+  position: relative;
+  border: 0;
+}
+
+.hover-bd-move span {
+  position: absolute;
+  background: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hover-bd-move span:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+}
+
+.hover-bd-move span:nth-child(2) {
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 0;
+}
+
+.hover-bd-move span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+}
+
+.hover-bd-move span:nth-child(4) {
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+}
+
+.hover-bd-move:hover span:nth-child(1) {
+  width: 100%;
+}
+
+.hover-bd-move:hover span:nth-child(2) {
+  height: 100%;
+}
+
+.hover-bd-move:hover span:nth-child(3) {
+  width: 100%;
+}
+
+.hover-bd-move:hover span:nth-child(4) {
+  height: 100%;
+}
+
+.hover-bd-move-order {
+  position: relative;
+  border: 0;
+}
+
+.hover-bd-move-order span {
+  position: absolute;
+  background: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hover-bd-move-order span:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 5px;
+}
+
+.hover-bd-move-order span:nth-child(2) {
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 0;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.hover-bd-move-order span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.hover-bd-move-order span:nth-child(4) {
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.hover-bd-move-order:hover span:nth-child(1) {
+  width: 100%;
+}
+
+.hover-bd-move-order:hover span:nth-child(2) {
+  height: 100%;
+}
+
+.hover-bd-move-order:hover span:nth-child(3) {
+  width: 100%;
+}
+
+.hover-bd-move-order:hover span:nth-child(4) {
+  height: 100%;
+}
+
+.hover-bdb-move {
+  border: 0;
+  position: relative;
+}
+
+.hover-bdb-move span {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 0;
+  height: 2px;
+  background: #B61B2D;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hover-bdb-move:hover span {
+  width: 100%;
+}
+
+.hover-bdb-move-over {
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-bdb-move-over span {
+  position: absolute;
+  left: -90%;
+  bottom: 0;
+  width: 90%;
+  height: 3px;
+  background: #000;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.hover-bdb-move-over:hover span {
+  left: 100%;
+}
+
+.hover-square-zoom-1 {
+  position: relative;
+  background-size: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hover-square-zoom-1 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hover-square-zoom-1::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.hover-square-zoom-1:hover {
+  background-size: 120%;
+}
+
+.hover-square-zoom-1:hover > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.hover-square-zoom-2 {
+  position: relative;
+  background-size: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.hover-square-zoom-2 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.hover-square-zoom-2 > div > * {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.hover-square-zoom-2::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.hover-square-zoom-2:hover {
+  background-size: 120%;
+}
+
+.hover-square-zoom-2:hover > div {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hover-square-zoom-2:hover > div > * {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  color: #fff;
+}
+/*# sourceMappingURL=3-ani-hover.css.map */
