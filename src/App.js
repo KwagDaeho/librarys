@@ -1,12 +1,11 @@
-import "./asset/css/0-reset.css";
-import "./asset/css/1-asset.css";
-import "./asset/css/2-object.css";
-import Index from "./Components/Index";
+// import Index from "./Components/Index";
+import MyIndex from "./Components/MyIndex";
 
 function App() {
   return (
     <div className="App">
-      <Index />
+      {/* <Index /> */}
+      <MyIndex />
     </div>
   );
 }
