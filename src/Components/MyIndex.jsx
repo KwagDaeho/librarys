@@ -1,12 +1,14 @@
 import React from "react";
-import StyledComponents from "./Librarys/StyledComponents";
 import MyTitle from "./MyTitle";
+// import StyledComponents from "./Librarys/StyledComponents";
+import Emotion from "./Librarys/Emotion";
 
 export default function MyIndex() {
   return (
-    <div id="index-page" className="wrap">
+    <div>
       <MyTitle tag="Style" />
-      <StyledComponents />
+      {/* <StyledComponents /> */}
+      <Emotion />
     </div>
   );
 }
