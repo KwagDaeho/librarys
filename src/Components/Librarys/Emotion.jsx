@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
+import { css, Global, keyframes, ClassNames } from "@emotion/react";
 import styled from "@emotion/styled";
 
 const color = "white";
@@ -67,9 +67,46 @@ const ArticleText = (props) => (
     {...props} // <- props contains the `className` prop
   />
 );
+const paragraph = css`
+  color: turquoise;
+  a {
+    border-bottom: 1px solid currentColor;
+    cursor: pointer;
+  }
+  header & {
+    color: green;
+    a {
+      border-bottom-color: #f90;
+    }
+  }
+`;
+const bounce = keyframes`
+  from, 20%, 53%, 80%, to {
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+`;
+let SomeComponent2 = (props) => (
+  <div className={props.wrapperClassName}>
+    in the wrapper!
+    <div className={props.className}>{props.children}</div>
+  </div>
+);
+
 export default function Emotion() {
   return (
-    <div>
+    <>
       <div
         css={css`
           padding: 32px;
@@ -91,9 +128,65 @@ export default function Emotion() {
         </SomeComponent>
         <AnotherComponent />
         <MyComponent />
-        <P>PPPPP</P>
-        <ArticleText>My Article</ArticleText>
+        <P>This is My P Tag</P>
+        <ArticleText>
+          This is My ArticleText Tag.
+          <br />
+          This is Overriding My P Tag
+        </ArticleText>
       </div>
-    </div>
+      <div>
+        <header>
+          <p css={paragraph}>
+            This is green since it's inside a header.
+            <br />
+            <a>This Text is is "a" tag in header</a>
+          </p>
+        </header>
+        <p css={paragraph}>
+          This is turquoise since it's not inside a header.
+          <br />
+          <a>This Text is is "a" tag</a>
+        </p>
+      </div>
+      <div>
+        <Global
+          styles={css`
+            .some-class {
+              color: hotpink !important;
+            }
+          `}
+        />
+        <Global
+          styles={{
+            ".some-class": {
+              fontSize: 50,
+              textAlign: "center",
+            },
+          }}
+        />
+        <div className="some-class">This is some-text.</div>
+      </div>
+      <div
+        className="some-class"
+        css={css`
+          animation: ${bounce} 1s ease infinite;
+        `}
+      >
+        some bouncing text!
+      </div>
+      <ClassNames>
+        {({ css, cx }) => (
+          <SomeComponent2
+            wrapperClassName={css({ color: "green" })}
+            className={css`
+              color: hotpink;
+            `}
+          >
+            from children!!
+          </SomeComponent2>
+        )}
+      </ClassNames>
+    </>
   );
 }
