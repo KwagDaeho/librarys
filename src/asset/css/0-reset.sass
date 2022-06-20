@@ -1,22 +1,6 @@
-
-//----------
-// Color Setting
-//----------
-$default : #222
-$point1 : #B61B2D
-$point2 : #1568a1
-$point3 : #43a7ed
-$point4 : #ac01ea
-$point5 : #ffaced
-$gray1 : #ddd
-$gray2 : #555
-$gray3 : #7d7d7d
-$gray4 : #999
-$gray5 : #aaa
-$gray6 : #ccc
-$gray7 : #eee
-$gray8 : #f6f6f6
-$bk : #222  
+@import 0_1_setting_color
+@import 0_2_setting_font
+@import 0_3_setting_size
 
 * 
   margin: 0
@@ -30,11 +14,13 @@ $bk : #222
   background-repeat: no-repeat
   background-size: cover
   line-height: 1.6em
+body
+  font-family: $ff1
 body, a, a:hover 
-  color: $default
+  color: $gray1
   text-decoration: none
 body
-  font-size: 18px
+  font-size: $fix5
 
 header,
 footer,
@@ -46,22 +32,17 @@ article
 ol,
 ul 
   list-style-type: none
-
 img 
   width: 100%
   border: 0
-
 table 
   width: 100%
   border-collapse: collapse
   border-spacing: 0
-
 td,
 th 
   border: 1px solid $gray1
   border-width: 1px 0
-
-
-@media screen and (max-width: 767px)
+@media screen and (min-width: 768px)
   body 
-    font-size: 14px
+    font-size: $fix6

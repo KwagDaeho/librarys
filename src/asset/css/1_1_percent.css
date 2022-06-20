@@ -1,0 +1,442 @@
+/* For Mobile */
+/* For PC, Tablet */
+.w-per1 {
+  width: 20%;
+}
+
+.w-per2 {
+  width: 40%;
+}
+
+.w-per3 {
+  width: 60%;
+}
+
+.w-per4 {
+  width: 80%;
+}
+
+.w-per5 {
+  width: 100%;
+}
+
+.w-per6 {
+  width: 120%;
+}
+
+.w-per7 {
+  width: 140%;
+}
+
+.w-per8 {
+  width: 160%;
+}
+
+.w-per9 {
+  width: 180%;
+}
+
+.w-per10 {
+  width: 200%;
+}
+
+.h-per1 {
+  height: 20%;
+}
+
+.h-per2 {
+  height: 40%;
+}
+
+.h-per3 {
+  height: 60%;
+}
+
+.h-per4 {
+  height: 80%;
+}
+
+.h-per5 {
+  height: 100%;
+}
+
+.h-per6 {
+  height: 120%;
+}
+
+.h-per7 {
+  height: 140%;
+}
+
+.h-per8 {
+  height: 160%;
+}
+
+.h-per9 {
+  height: 180%;
+}
+
+.h-per10 {
+  height: 200%;
+}
+
+.mt-per1 {
+  margin-top: 20%;
+}
+
+.mb-per1 {
+  margin-bottom: 20%;
+}
+
+.ml-per1 {
+  margin-left: 20%;
+}
+
+.mr-per1 {
+  margin-right: 20%;
+}
+
+.mt-per2 {
+  margin-top: 40%;
+}
+
+.mb-per2 {
+  margin-bottom: 40%;
+}
+
+.ml-per2 {
+  margin-left: 40%;
+}
+
+.mr-per2 {
+  margin-right: 40%;
+}
+
+.mt-per3 {
+  margin-top: 60%;
+}
+
+.mb-per3 {
+  margin-bottom: 60%;
+}
+
+.ml-per3 {
+  margin-left: 60%;
+}
+
+.mr-per3 {
+  margin-right: 60%;
+}
+
+.mt-per4 {
+  margin-top: 80%;
+}
+
+.mb-per4 {
+  margin-bottom: 80%;
+}
+
+.ml-per4 {
+  margin-left: 80%;
+}
+
+.mr-per4 {
+  margin-right: 80%;
+}
+
+.mt-per5 {
+  margin-top: 100%;
+}
+
+.mb-per5 {
+  margin-bottom: 100%;
+}
+
+.ml-per5 {
+  margin-left: 100%;
+}
+
+.mr-per5 {
+  margin-right: 100%;
+}
+
+.mt-per6 {
+  margin-top: 120%;
+}
+
+.mb-per6 {
+  margin-bottom: 120%;
+}
+
+.ml-per6 {
+  margin-left: 120%;
+}
+
+.mr-per6 {
+  margin-right: 120%;
+}
+
+.mt-per7 {
+  margin-top: 140%;
+}
+
+.mb-per7 {
+  margin-bottom: 140%;
+}
+
+.ml-per7 {
+  margin-left: 140%;
+}
+
+.mr-per7 {
+  margin-right: 140%;
+}
+
+.mt-per8 {
+  margin-top: 160%;
+}
+
+.mb-per8 {
+  margin-bottom: 160%;
+}
+
+.ml-per8 {
+  margin-left: 160%;
+}
+
+.mr-per8 {
+  margin-right: 160%;
+}
+
+.mt-per9 {
+  margin-top: 180%;
+}
+
+.mb-per9 {
+  margin-bottom: 180%;
+}
+
+.ml-per9 {
+  margin-left: 180%;
+}
+
+.mr-per9 {
+  margin-right: 180%;
+}
+
+.mt-per10 {
+  margin-top: 200%;
+}
+
+.mb-per10 {
+  margin-bottom: 200%;
+}
+
+.ml-per10 {
+  margin-left: 200%;
+}
+
+.mr-per10 {
+  margin-right: 200%;
+}
+
+.pt-per1 {
+  padding-top: 20%;
+}
+
+.pb-per1 {
+  padding-bottom: 20%;
+}
+
+.pl-per1 {
+  padding-left: 20%;
+}
+
+.pr-per1 {
+  padding-right: 20%;
+}
+
+.pt-per2 {
+  padding-top: 40%;
+}
+
+.pb-per2 {
+  padding-bottom: 40%;
+}
+
+.pl-per2 {
+  padding-left: 40%;
+}
+
+.pr-per2 {
+  padding-right: 40%;
+}
+
+.pt-per3 {
+  padding-top: 60%;
+}
+
+.pb-per3 {
+  padding-bottom: 60%;
+}
+
+.pl-per3 {
+  padding-left: 60%;
+}
+
+.pr-per3 {
+  padding-right: 60%;
+}
+
+.pt-per4 {
+  padding-top: 80%;
+}
+
+.pb-per4 {
+  padding-bottom: 80%;
+}
+
+.pl-per4 {
+  padding-left: 80%;
+}
+
+.pr-per4 {
+  padding-right: 80%;
+}
+
+.pt-per5 {
+  padding-top: 100%;
+}
+
+.pb-per5 {
+  padding-bottom: 100%;
+}
+
+.pl-per5 {
+  padding-left: 100%;
+}
+
+.pr-per5 {
+  padding-right: 100%;
+}
+
+.pt-per6 {
+  padding-top: 120%;
+}
+
+.pb-per6 {
+  padding-bottom: 120%;
+}
+
+.pl-per6 {
+  padding-left: 120%;
+}
+
+.pr-per6 {
+  padding-right: 120%;
+}
+
+.pt-per7 {
+  padding-top: 140%;
+}
+
+.pb-per7 {
+  padding-bottom: 140%;
+}
+
+.pl-per7 {
+  padding-left: 140%;
+}
+
+.pr-per7 {
+  padding-right: 140%;
+}
+
+.pt-per8 {
+  padding-top: 160%;
+}
+
+.pb-per8 {
+  padding-bottom: 160%;
+}
+
+.pl-per8 {
+  padding-left: 160%;
+}
+
+.pr-per8 {
+  padding-right: 160%;
+}
+
+.pt-per9 {
+  padding-top: 180%;
+}
+
+.pb-per9 {
+  padding-bottom: 180%;
+}
+
+.pl-per9 {
+  padding-left: 180%;
+}
+
+.pr-per9 {
+  padding-right: 180%;
+}
+
+.pt-per10 {
+  padding-top: 200%;
+}
+
+.pb-per10 {
+  padding-bottom: 200%;
+}
+
+.pl-per10 {
+  padding-left: 200%;
+}
+
+.pr-per10 {
+  padding-right: 200%;
+}
+
+.fz-per1 {
+  font-size: 20%;
+}
+
+.fz-per2 {
+  font-size: 40%;
+}
+
+.fz-per3 {
+  font-size: 60%;
+}
+
+.fz-per4 {
+  font-size: 80%;
+}
+
+.fz-per5 {
+  font-size: 100%;
+}
+
+.fz-per6 {
+  font-size: 120%;
+}
+
+.fz-per7 {
+  font-size: 140%;
+}
+
+.fz-per8 {
+  font-size: 160%;
+}
+
+.fz-per9 {
+  font-size: 180%;
+}
+
+.fz-per10 {
+  font-size: 200%;
+}
+/*# sourceMappingURL=1_1_percent.css.map */

@@ -1,0 +1,70 @@
+@import 0_3_setting_size
+
+//----------
+// Width
+//----------
+@mixin w-from-list($index)
+  width: nth($fixedSize, $index)
+@for $index from 1 through length($fixedSize)
+  .w-#{$index}
+    @include w-from-list($index)
+
+//----------
+// Height
+//----------
+@mixin h-from-list($index)
+  height: nth($fixedSize, $index)
+@for $index from 1 through length($fixedSize)
+  .h-#{$index}
+    @include h-from-list($index)
+
+//----------
+// Margin
+//----------
+@mixin mt-from-list($index)
+  margin-top: nth($fixedSize, $index)
+@mixin mb-from-list($index)
+  margin-bottom: nth($fixedSize, $index)
+@mixin ml-from-list($index)
+  margin-left: nth($fixedSize, $index)
+@mixin mr-from-list($index)
+  margin-right: nth($fixedSize, $index)
+@for $index from 1 through length($fixedSize)
+  .mt-#{$index}
+    @include mt-from-list($index)
+  .mb-#{$index}
+    @include mb-from-list($index)
+  .ml-#{$index}
+    @include ml-from-list($index)
+  .mr-#{$index}
+    @include mr-from-list($index)
+
+//----------
+// Padding
+//----------
+@mixin pt-from-list($index)
+  padding-top: nth($fixedSize, $index)
+@mixin pb-from-list($index)
+  padding-bottom: nth($fixedSize, $index)
+@mixin pl-from-list($index)
+  padding-left: nth($fixedSize, $index)
+@mixin pr-from-list($index)
+  padding-right: nth($fixedSize, $index)
+@for $index from 1 through length($fixedSize)
+  .pt-#{$index}
+    @include pt-from-list($index)
+  .pb-#{$index}
+    @include pb-from-list($index)
+  .pl-#{$index}
+    @include pl-from-list($index)
+  .pr-#{$index}
+    @include pr-from-list($index)
+
+//----------
+// Font-Size
+//----------
+@mixin fz-from-list($index)
+  font-size: nth($fixedSize, $index)
+@for $index from 1 through length($fixedSize)
+  .fz-#{$index}
+    @include fz-from-list($index)

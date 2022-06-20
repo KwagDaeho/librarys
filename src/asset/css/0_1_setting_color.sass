@@ -1,0 +1,65 @@
+//----------
+// All Color Setting 
+//----------
+// You can change All default value in '0-reset.sass'
+  
+$point1 : #B61B2D
+$point2 : #1568a1
+$point3 : #43a7ed
+$point4 : #ac01ea
+$point5 : #ffaced
+
+$gray1 : #1a1a1a // gray1 : Default Text-Color
+$gray2 : #2c2c2c
+$gray3 : #4d4d4d
+$gray4 : #7e7e7e
+$gray5 : #9c9c9c
+$gray6 : #a2a2a2
+$gray7 : #c8c8c8
+$gray8 : #e1e1e1
+$gray9 : #f6f6f6
+$gray_10 : #ffffff
+
+//----------
+// Array Setting :: Change Element if you change number of colors.
+//----------
+$points : $point1 $point2 $point3 $point4 $point5 
+$grays : $gray1 $gray2 $gray3 $gray4 $gray5 $gray6 $gray7 $gray8 $gray9 $gray_10
+
+
+//----------
+// Setting End 
+//----------
+
+
+// Point Colors
+@mixin text-point-from-list($index)
+  color: nth($points, $index)
+@mixin bgc-point-from-list($index)
+  background-color: nth($points, $index)
+@mixin bdc-point-from-list($index)
+  border-color: nth($points, $index)
+
+@for $index from 1 through length($points)
+  .text-point#{$index}
+    @include text-point-from-list($index)
+  .bgc-point#{$index}
+    @include bgc-point-from-list($index)
+  .bdc-point#{$index}
+    @include bdc-point-from-list($index)
+
+// Gray Colors
+@mixin text-gray-from-list($index)
+  color: nth($grays, $index)
+@mixin bgc-gray-from-list($index)
+  background-color: nth($grays, $index)
+@mixin bdc-gray-from-list($index)
+  border-color: nth($grays, $index)
+
+@for $index from 1 through length($grays)
+  .text-gray#{$index}
+    @include text-gray-from-list($index)
+  .bgc-gray#{$index}
+    @include bgc-gray-from-list($index)
+  .bdc-gray#{$index}
+    @include bdc-gray-from-list($index)

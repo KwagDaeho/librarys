@@ -1,3 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.text-point1 {
+  color: #B61B2D;
+}
+
+.bgc-point1 {
+  background-color: #B61B2D;
+}
+
+.bdc-point1 {
+  border-color: #B61B2D;
+}
+
+.text-point2 {
+  color: #1568a1;
+}
+
+.bgc-point2 {
+  background-color: #1568a1;
+}
+
+.bdc-point2 {
+  border-color: #1568a1;
+}
+
+.text-point3 {
+  color: #43a7ed;
+}
+
+.bgc-point3 {
+  background-color: #43a7ed;
+}
+
+.bdc-point3 {
+  border-color: #43a7ed;
+}
+
+.text-point4 {
+  color: #ac01ea;
+}
+
+.bgc-point4 {
+  background-color: #ac01ea;
+}
+
+.bdc-point4 {
+  border-color: #ac01ea;
+}
+
+.text-point5 {
+  color: #ffaced;
+}
+
+.bgc-point5 {
+  background-color: #ffaced;
+}
+
+.bdc-point5 {
+  border-color: #ffaced;
+}
+
+.text-gray1 {
+  color: #000;
+}
+
+.bgc-gray1 {
+  background-color: #000;
+}
+
+.bdc-gray1 {
+  border-color: #000;
+}
+
+.text-gray2 {
+  color: #fff;
+}
+
+.bgc-gray2 {
+  background-color: #fff;
+}
+
+.bdc-gray2 {
+  border-color: #fff;
+}
+
+.text-gray3 {
+  color: #2c2c2c;
+}
+
+.bgc-gray3 {
+  background-color: #2c2c2c;
+}
+
+.bdc-gray3 {
+  border-color: #2c2c2c;
+}
+
+.text-gray4 {
+  color: #5d5d5d;
+}
+
+.bgc-gray4 {
+  background-color: #5d5d5d;
+}
+
+.bdc-gray4 {
+  border-color: #5d5d5d;
+}
+
+.text-gray5 {
+  color: #999;
+}
+
+.bgc-gray5 {
+  background-color: #999;
+}
+
+.bdc-gray5 {
+  border-color: #999;
+}
+
+.text-gray6 {
+  color: #aaa;
+}
+
+.bgc-gray6 {
+  background-color: #aaa;
+}
+
+.bdc-gray6 {
+  border-color: #aaa;
+}
+
+.text-gray7 {
+  color: #ccc;
+}
+
+.bgc-gray7 {
+  background-color: #ccc;
+}
+
+.bdc-gray7 {
+  border-color: #ccc;
+}
+
+.text-gray8 {
+  color: #eee;
+}
+
+.bgc-gray8 {
+  background-color: #eee;
+}
+
+.bdc-gray8 {
+  border-color: #eee;
+}
+
+.text-gray9 {
+  color: #f6f6f6;
+}
+
+.bgc-gray9 {
+  background-color: #f6f6f6;
+}
+
+.bdc-gray9 {
+  border-color: #f6f6f6;
+}
+
+@font-face {
+  font-family: "Raleway", "Noto Sans KR", san-serif;
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* For Mobile */
+/* For PC, Tablet */
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +190,17 @@
   line-height: 1.6em;
 }
 
+body {
+  font-family: "Raleway", "Noto Sans KR", san-serif;
+}
+
 body, a, a:hover {
-  color: #222;
+  color: #000;
   text-decoration: none;
 }
 
 body {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 header,
@@ -48,13 +230,13 @@ table {
 
 td,
 th {
-  border: 1px solid #ddd;
+  border: 1px solid #000;
   border-width: 1px 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=0-reset.css.map */
